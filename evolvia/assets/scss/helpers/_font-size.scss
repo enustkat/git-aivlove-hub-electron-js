@@ -1,0 +1,81 @@
+$font-sizes: () !default;
+$font-sizes: map-merge(
+    (
+        '9': 9px,
+        '10': 10px,
+        '11': 11px,
+        '12': 12px,
+        '13': 13px,
+        '14': 14px,
+        '15': 15px,
+        '16': 16px,
+        '17': 17px,
+        '18': 18px,
+        '19': 19px,
+        '20': 20px,
+        '21': 21px,
+        '22': 22px,
+        '23': 23px,
+        '24': 24px,
+        '25': 25px,
+        '26': 26px,
+        '27': 27px,
+        '28': 28px,
+        '29': 29px,
+        '30': 30px,
+        '31': 31px,
+        '32': 32px,
+        '33': 33px,
+        '34': 34px,
+        '35': 35px,
+        '36': 36px,
+        '37': 37px,
+        '38': 38px,
+        '39': 39px,
+        '40': 40px,
+        '41': 41px,
+        '42': 42px,
+        '43': 43px,
+        '44': 44px,
+        '45': 45px,
+        '46': 46px,
+        '47': 47px,
+        '48': 48px,
+        '49': 49px,
+        '50': 50px,
+        '51': 51px,
+        '52': 52px,
+        '53': 53px,
+        '54': 54px,
+        '55': 55px,
+        '60': 60px,
+        '65': 65px,
+        '70': 70px,
+        '80': 80px,
+        '85': 85px,
+        '90': 90px,
+        '100': 100px,
+        '120': 120px,
+        '130': 130px,
+        '135': 135px,
+        '140': 140px,
+        '145': 145px,
+        '150': 150px,
+        '155': 155px,
+        '160': 160px,
+        '165': 165px,
+    ),
+    $font-sizes
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $value in $font-sizes {
+            .font-size#{$infix}-#{$key} {
+                font-size: $value !important;
+            } 
+        }
+    }
+}

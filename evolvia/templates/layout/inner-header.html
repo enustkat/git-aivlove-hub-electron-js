@@ -1,0 +1,36 @@
+@@include('./header.html') 
+
+<main role="main" id="inner-layout">
+  @@include('../content/partials/raport-modal.html') 
+
+  @@include('../partials/navbar.html') 
+  
+
+  <div class="layout--bg" >
+   <div id="content">
+      <img class="layout--hero" src="assets/img/hero_new_main_inner.png">
+      <img class="layout--hero__mobile" src="assets/img/hero_new_main_mobile.png">
+      <div class="layout--row__1">
+        <a href="/evolvia"><img class=" topnav--logo--inline" src="assets/img/logo.svg"></a>
+        <img class=" layout--fligran__b" src="assets/img/fligran-banner.svg">
+        <div class="module--title__module module--title__module__doz">Doz Hesaplama <br> Modülü</div>
+        <div class="module--title__module module--title__module__presentil"><span>Presentil Hesaplama</span> <br> Modülü</div>
+      </div>
+      
+
+      <div class="layout--container ">
+        <div class="layout--container--inner--header">
+          <div class="layout--container--inner--header--menu">
+            @@include('../partials/inner-top-menu.html') 
+          </div>
+          <div class="layout--row__4 "> 
+            
+            <a href="doz-hesapla.html" class="layout--button layout--button__yellow layout--button__left inner__header__doz__hesapla__js">Doz Hesapla</a>
+            <a href="presentil-hesapla.html" class="layout--button layout--button__blue layout--button__right inner__header__presentil__hesapla__js">Presentil Hesapla</a>
+
+         
+          </div>
+          <div>
+            
+          </div>
+        </div>

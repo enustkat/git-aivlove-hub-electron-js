@@ -1,0 +1,353 @@
+.urun--icerik{
+    &--container{
+        padding: 15px 10px;
+
+        @include mobile{
+            padding: 20px 10px;
+        } 
+        
+        .product__detail__button {
+            @include flex-v-h-center;
+
+            display: none;
+            @include ease(0.3s); 
+            @include absolute-center;
+            color: #ffff;
+            font-weight: 900;
+            background-clip: padding-box;
+            background-color: $darkYellow;
+            font-size: 33px;
+            text-align: center;
+            width: 11vw;
+            padding: 10px;
+            font-size: 1.3vw;
+            border-radius: 66px;
+            zoom: .8;
+            top: 22vw;
+
+            @include desktop-1440{
+                top: 25vw;                       
+            } 
+            @include desktop-1366{
+                zoom: .7;
+                top: 21vw;                       
+            } 
+            @include tablet-x{
+                top: 42vw;
+                zoom: 1.5;         
+            } 
+
+            @include tablet(){
+                position: unset;
+                display: block;
+                margin: 0 auto;
+                padding: 6px;
+                width: 21vw;
+                margin-top: 2vw;
+                font-size: 2.4vw;
+            }
+            
+            
+        }
+
+        &--inner{
+
+            &--items{
+                cursor: pointer;
+            }
+            background-color: $bgLightGray;
+            color: $darkBlue;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            padding: 4vw;
+            @include flex-v-h-center();
+            &:hover{
+                background-color: $bgDarkBlue;
+                color: white;
+                @include background-image("product-bg.png", cover, center); 
+                @include ease(0.3s); 
+                & .product__detail__button {
+                    display: inline-block;
+                }
+            }
+
+            @include tablet(){
+                background-color: $bgDarkBlue;
+                color: white;
+                @include background-image("product-bg.png", cover, center); 
+
+            }
+
+
+
+        }
+    }
+    &--product{
+        &--img{
+            width:  24vh;
+            @include desktop-1366{
+                width: calc((14vh + 14vw) / 2);
+            }
+            @include mobile{
+                width: calc((27vh + 27vw)/ 2);
+            }
+        }
+        &--text{
+            font-size: 5.65vh;
+            @include tablet-x{
+                font-size: 4.65vh;
+            }
+        }
+        &--desc{
+            font-size: 1.81vh;
+            margin-top: 1.5vh;
+            & span {
+                font-weight: bold;
+            }
+        }
+        &--icerik{
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+            @include mobile(){
+                width: 90%;
+            }
+
+            & span{
+                font-size: 20px;
+                color: $darkBlue;
+                font-weight: 600;
+                @include mobile(){
+                    font-size: 15px;
+                }
+            }
+            & p{
+                color: $lightText;
+                @include mobile(){
+                    font-size: 13px;
+                }
+            }
+        }
+        &--bilesen{
+            & table {
+                border-collapse: collapse;
+                margin: 0 auto;
+                width: 50%;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                @include mobile(){
+                    width: 90%;
+                }
+                
+
+              }
+              & td {
+                padding: 7px;
+                border: 1px solid #d0d9e7;
+                text-align: left;
+                font-size: 15px;
+                color: $darkBlue;
+                text-align: center;
+                @include mobile(){
+                    font-size: 13px;
+                }
+              }
+              
+        }
+    }
+}
+
+#urun-icerik{
+    @include mobile{
+        margin-top: -10px;
+    }
+}
+
+.urun--icerik--product--detail {
+    &--back{
+        color: $LightGrey;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        font-size: 15px;
+
+        @include desktop-1440(){
+            font-size: 13px; 
+        }
+
+        @include mobile(){
+            font-size: 13px; 
+        }
+
+
+        & img{
+            margin-right: 1vh;
+            width: 1vh;
+            cursor: pointer;
+            margin-left: 3vh;
+        }
+    }
+
+    &--header--left{
+        display: flex;
+        align-items: center;
+    }
+    &--header--right{
+
+    }
+    &--text{
+        color: $darkBlue;
+        font-size: 1.5vw;
+        font-weight: 300;
+        @include mobile(){
+            display: none;
+        }
+    }
+    &--text--mobile{
+        display: none;
+        @include mobile(){
+            color: $darkBlue;
+            font-size: 17px;
+            font-weight: 300;
+            display: block;
+            margin-left: 0vh;
+            margin-bottom: 5vh;
+        }
+    }
+    &--other--product--button{
+        color: $darkBlue;
+        font-size: .85vw;
+        font-weight: 600;
+        background-color: $darkWhite;
+        border: solid 1px $darkWhiteBorder;
+        padding: 1.5vh;
+        border-radius: 66px;
+        cursor: pointer;
+        margin-right: 3vh;
+
+        @include mobile(){
+            font-size: 13px;
+            margin-right: 2vh;
+            zoom: .8;
+        }
+
+      
+
+    }
+    &--button{
+        display: none;
+        @include mobile(){
+            display: block;
+            @include center;
+            color: #ffff;
+            font-weight: 900;
+            background-clip: padding-box;
+            background-color: $darkYellow;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+            font-size: 17px;
+            border-radius: 66px;
+            zoom: .9;
+            top: 22vw;
+            margin-bottom: 30px;
+
+        }
+    }
+
+    .table--mobile--container{
+        display: none;
+        @include mobile(){
+            display: block;
+        }        
+    }
+
+    &--table{
+        margin-top: 20px;
+        margin-bottom: 80px;
+
+        @include mobile(){
+            display: none;
+            @include table-mobile-full(){
+                display: block;
+            }
+        }
+
+       & table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 65%;
+            @include table-mobile-full(){
+                width: 95%;
+            }
+          }
+          & td {
+            padding: 3px;
+            border: 1px solid #d0d9e7;
+            text-align: left;
+            font-size: 15px;
+            @include table-mobile-full(){
+                font-size: 13px;
+            }
+          }
+
+          & tr{
+              & td{
+                width: 10%;
+                color: $darkBlue;
+                & span{
+                    font-weight: 600;
+                }
+              }
+              &:first-child td {
+                border-top: 0;
+              }
+              & td:first-child {
+                border-left: 0;
+                width: 40%;
+              }
+              &:last-child td {
+                border-bottom: 0;
+              }
+              & td:last-child {
+                border-right: 0;
+              }
+              &:nth-child(2), &:nth-child(3),&:nth-child(5),&:nth-child(12),&:nth-child(15),&:nth-child(32),&:nth-child(46),&:nth-child(52),&:nth-child(57),&:nth-child(58),&:nth-child(59),&:nth-child(60),&:nth-child(61){
+                  & td:nth-child(1){
+                    font-weight: 600;
+                  }
+              }
+
+              & td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+                  text-align: center;
+              }
+              
+          }
+    }
+}
+
+.vertical-line{
+    height: 4vh;
+    width: .2vh !important;
+    margin-left: 3vh !important;
+    margin-right: 3vh!important;
+    @include mobile(){
+        zoom: .9;
+    }
+}
+
+.urun--icerik--product--detail--full--1{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+  
+  
+  
+  

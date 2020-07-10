@@ -1,0 +1,594 @@
+.presentil-hesapla{
+    &--table{
+        &--row{
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 3vw;
+            padding-left: 3vw;
+            border: solid .5px white;
+            @include tablet-x(){
+                padding: 5vw;
+            }
+           
+
+
+            &__1{
+                text-align: left;
+                border-top-left-radius: 4px;
+                width: 34%;
+                @include tablet-x(){
+                    width: 55%;
+                    padding-top: 10%;
+                    padding-left: 8vw;
+                }
+            }
+            &__2{
+                text-align: left;
+                width: 28%;
+                @include tablet-x(){
+                    width: 45%;
+                    padding-top: 10%;
+                    padding-left: 8vw;
+                    
+                }
+            }
+            &__3{
+                text-align: left;
+                width: 38%;
+                @include tablet-x(){
+                    width: 100%;
+                    padding-right: 0 !important;
+                    background-color: unset;
+                }
+            }
+
+           
+
+            &__4{
+                text-align: left;
+                width: 100%;
+                margin-right: 5%;
+                
+            }
+            &__5{
+                width: 25%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__6{
+                width: 25%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__7{
+                width: 25%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__8{
+
+            }
+            &__9{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__10{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__11{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 100%;
+                }
+
+            }
+            &__12{
+                @include flex-v-center;
+                margin-top: -50px;
+                width: 34%;
+                text-align: left;
+                @include tablet-x(){
+                    width: 100%;
+                    margin-top: 0px;
+                   
+                }
+            }
+
+            &__13{
+                width: 90%;
+               
+            }
+            &__14{
+                width: 40%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__15{
+                width: 60%;
+                border: unset;
+                margin-left: -2px;
+                @include tablet-x(){
+                    width: 94%;
+                    margin-left: -2%;
+                    
+                }
+               
+            }
+            &__16{
+                width: 40%;
+                border: unset;
+                @include flex-v-h-center;
+                padding-right: 15px;
+                padding-top: 3vw;
+                margin-left: -50px;
+                @include tablet-x(){
+                    width: 94%;
+                    margin-left: -2%;
+                }
+            }
+
+            &__17{
+                text-align: left;
+                width: 100%;
+                padding-bottom: 2vw;
+                padding-top: 2vw;
+                @include tablet-x(){
+                    padding-right: 0 !important;
+                    background-color: $greyBg1;
+                    padding-right: 5vw !important;
+                }
+            }
+            &__18{
+                text-align: left;
+                width: 100%;
+                padding-bottom: 2vw;
+                padding-top: 2vw;
+                @include tablet-x(){
+                    padding-right: 0 !important;
+                    background-color: unset;
+                    padding-right: 5vw !important;
+                }
+            }
+            &__19{
+                width: 60%;
+                border: unset;
+                margin-left: -2px;
+                @include tablet-x(){
+                    padding-bottom: 2vw;
+                    padding-top: 2vw;
+                    padding-right: 0 !important;
+                    padding-left: 7vw !important;
+                    margin-left: 1vw;
+
+                    width: 100%;
+                    // margin-left: -2%;
+                    background-color: $greyBg1;
+                    padding-right: 5vw !important;
+
+                }
+               
+            }
+
+            &__20{
+                width: 40%;
+                border: unset;
+                @include flex-v-h-center;
+                padding-right: 15px;
+                padding-top: 3vw;
+                margin-left: -50px;
+                zoom: .8;
+                @include tablet-x(){
+                    width: 100%;
+                    margin-left: -6.5vw;
+                }
+            }
+
+
+
+            & input{
+               
+                padding: .5vw;
+                width: 80%;
+                border-radius: 60px;
+                border: solid 1px $darkWhiteBorder2;
+                color: $mainBlue;
+                font-size: 20px;
+                font-weight: 600;
+                padding-left: 1vw;
+
+                @include tablet-x(){
+                    width: 100%;
+                    padding: 2.2vw;
+                    font-size: 40px;
+                }
+                @include tablet(){
+                    width: 100%;
+                    padding: 2.7vw;
+                }
+                @include mobile(){
+                    padding: 2.5vw;
+                    font-size: 20px;
+                }
+
+            }
+            
+        }
+        &--title{
+            color: $lightText;
+            &__bigger{
+                color: $darkBlue;
+                & span{
+                    font-size: 60px;
+                }
+            }
+            &__big{
+                font-size: 1.2vw;
+                @include tablet-x(){
+                    font-size: 3.9vw;
+                }
+            }
+            &__small{
+                &__product{
+                    font-weight: bold;
+                    color: $darkBlue;
+                }
+                @include tablet-x(){
+                    font-size: 3.3vw;
+                }
+                
+            }
+
+            &__smaller{
+                font-size: 1vw;
+                color: $darkBlue;
+                margin-top: -30px;
+                margin-bottom: 30px;
+                @include tablet-x(){
+                    font-size: 3.5vw;
+                    margin-top: -20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            &__refresh{
+                font-size: 1.2vw;
+                color:$LightGrey;
+                font-weight: 600;
+                @include flex-v-h-center;
+                margin-left: -10px;
+                cursor: pointer;
+
+                
+                @include tablet-x(){
+                    font-size: 4.2vw;
+                }
+
+            }
+
+        }
+
+        &--age{
+            margin-right: 15px;
+            margin-left: -15px;
+            @include tablet-x(){
+                margin-right: -5px;
+                margin-left: 5px;
+            }
+           
+        }
+        &--baby-weight{
+            margin-right: 15px;
+            width: 95%;
+
+
+        
+            @include tablet-x(){
+                margin-right: -5px;
+                margin-left: 5px;
+            }
+           
+        }
+
+
+        &--weight{
+            width: 100% !important;
+            @include tablet-x(){
+                width: 90% !important;
+                margin-left: 7%;
+            }
+           
+        }
+        &--energy{
+            width: 100% !important;
+            @include tablet-x(){
+                width: 90% !important;
+                margin-left: 5%;
+            }
+           
+        }
+        &--birthday{
+            
+            width: 100% !important;
+            @include tablet-x(){
+                margin-left: 1vw;
+                width: 98% !important;
+                border: solid 1px $darkYellow !important;
+            }
+           
+           
+        }
+        
+
+
+        
+    }
+    &--img{
+        &__gender{
+            width: 50px;
+            @include tablet-x(){
+                width: 50px;
+            }
+            @include mobile(){
+                width: 30px;
+            }
+           
+            &__right{
+                margin-left: 3vw;
+                text-align: center;
+                @include tablet-x(){
+                    margin-left: 10vw;
+                }
+                @include tablet(){
+                    margin-left: 5vw;
+                }
+                
+            }
+            &__left{
+                margin-left: 0vw;
+                text-align: center;
+            }
+        }
+        &__sub_icons{
+            height: 50px;
+            &__product{
+                width: 60px;
+                height: unset;
+            }
+        }
+        &__refresh{
+            width: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+            @include flex-v-h-center;
+
+        }
+        &__picker{
+
+
+            margin-left: -45px;
+            margin-top: .5vw;
+            width: 36px;
+            height: 46px;
+            padding-bottom: .5vw;
+
+            @include desktop-1440(){
+                margin-left: -45px;
+                margin-top: 0.6vw;
+                width: 36px;
+                height: 43px;
+                padding-bottom: 0.5vw;
+            }
+
+            @include tablet-x(){
+                margin-left: -100px;
+                margin-top: 1.5vw;
+                width: 80px;
+                height: 80px;
+            }
+            @include tablet(){
+                margin-left: -100px;
+                margin-top: 1.5vw;
+                width: 80px;
+                height: 80px;
+            }
+            
+            @include mobile(){
+                margin-left: -45px;
+            margin-top: 1.5vw;
+            width: 40px;
+            height: 40px;
+            }
+
+            &__desktop{
+                @include tablet-x(){
+                    display: none;
+                }
+            }
+            &__mobile{
+                display: none;
+                @include tablet-x(){
+                    display: block;
+                }
+            }
+
+        }
+        &__prev{
+            width: 10px;
+        }
+        &__next{
+            width: 10px;
+        }
+    }
+
+    &--container--inner{
+        @include desktop-1366{
+            zoom: .9;
+        }
+    }
+
+
+   
+    
+}
+
+.rapor-al--button{
+    @include ease(0.3s); 
+        @include center;
+        @include flex-v-h-center;
+        color: #ffff;
+        font-weight: 900;
+        background-clip: padding-box;
+        background-color: $darkYellow;
+        font-size: 33px;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.3vw;
+        border-radius: 66px;
+        zoom: .8;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        &:hover{
+            color: white;
+        }
+
+        @include tablet-x(){
+            font-size: 4vw;
+            zoom: 1;
+            width: 60vw;
+            margin-left: 7vw;
+            margin-top: -15px;
+        }
+
+
+        
+        
+}
+
+
+.presentil-degerleri-gor--button{
+    @include ease(0.3s); 
+        color: #ffff;
+        font-weight: 900;
+        background-clip: padding-box;
+        background-color: $lightBlueButton;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.3vw;
+        border-radius: 66px;
+        zoom: .8;
+        padding-right: 4vw;
+        padding-left: 4vw;
+        &:hover{
+            color: white;
+        }
+
+       
+       
+
+        @include tablet-x(){
+            @include ease(0.3s); 
+            @include center;
+            @include flex-v-h-center;
+            margin-left: 7vw;
+
+
+            font-size: 4vw;
+            zoom: 1;
+            width: 91vw;
+        }
+        
+}
+
+.presentil-hesapla--button{
+    // @include ease(0.3s); 
+    //     color: #ffff;
+    //     font-weight: 900;
+    //     background-clip: padding-box;
+    //     background-color: $darkBlue;
+    //     text-align: center;
+    //     padding: 20px;
+    //     font-size: 1.5vw;
+    //     border-radius: 66px;
+    //     zoom: .8;
+    //     padding-right: 2vw;
+    //     padding-left: 2vw;
+    //     margin-top: 3vw;
+
+        @include ease(0.3s); 
+        color: #ffff !important;
+        font-weight: 900 !important;
+        background-clip: padding-box;
+        background-color: $darkBlue;
+        text-align: center;
+        padding: 20px !important;
+        font-size: 1.1vw !important;
+        border-radius: 66px !important;
+        padding-right: 7vw !important;
+        padding-left: 2vw !important;
+        margin-top: 0vw !important;
+        margin-right: -2vw !important;
+        
+        &:hover{
+            color: white;
+            background-color: $hoverBlue;
+        }
+
+        
+
+        @include tablet-x(){
+            @include ease(0.3s); 
+            @include center;
+            
+            padding: 15px 30px !important;
+            font-size: 4vw!important;
+            margin-top: -2vw !important;
+
+            
+        }
+        
+}
+
+
+.urun--icerik--vertical-line{
+    height: 8vh;
+    width: .2vh !important;
+    margin-left: 3vh !important;
+    margin-right: 3vh!important;
+
+    @include mobile(){
+        @include flex-v-h-center;
+        zoom: .9;
+        height: 100%;
+    }
+}
+
+#presentil-hesapla{
+    @include mobile{
+        margin-top: -10px;
+    }
+}
+
+
+.presentil-hesapla--container--inner{
+    // zoom: .85;
+}
+
+
+
+  
+  
+  
+  

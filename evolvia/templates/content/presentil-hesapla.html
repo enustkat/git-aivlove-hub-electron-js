@@ -1,0 +1,124 @@
+<div class="row layout--row__6 presentil-hesapla--main ">
+    
+    <div class="col-md-12 presentil-hesapla--container">
+        <div class="presentil-hesapla--container--inner row">
+            <form action="presentil-degerler.html" method="GET" class="w-100">
+                    
+            <div class=" col-12">
+                <div class="row reset-row" style="zoom: .85;">
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__1 bg-grey-1">
+                        <div class="presentil-hesapla--table--title presentil-hesapla--table--title__big">Bebeğin Adı Soyadı</div>
+                        <input type="text" name="baby-name" class=" mt-10 mb-10" required>
+                    </div>
+                    
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__2 bg-grey-2">
+                        <div class="presentil-hesapla--table--title presentil-hesapla--table--title__big">Bebeğin Cinsiyeti</div>
+                        <div class="row reset-row  mt-10 mb-10">
+                            <div class="row presentil-hesapla--img__gender__left">
+                                <div>
+                                    <img class="presentil-hesapla--img__gender" src="assets/img/girl.svg">
+                                    <div class="presentil-hesapla--table--title presentil-hesapla--table--title__gender presentil-hesapla--table--title__big text-center">Kız</div>
+                                </div>
+                                <label class="form-container">
+                                    <input type="radio" name="baby-gender"  value="girl" required checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> 
+                            <div class="row presentil-hesapla--img__gender__right">
+                                <div>
+                                    <img class="presentil-hesapla--img__gender " src="assets/img/boy.svg">
+                                    <div class="presentil-hesapla--table--title presentil-hesapla--table--title__gender presentil-hesapla--table--title__big text-center">Erkek</div>
+                                </div>
+                                <label class="form-container">
+                                    <input type="radio" name="baby-gender"  value="boy" required>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div> 
+                        </div>    
+                    </div>
+
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__3 bg-grey-1">
+                        <div class="row reset-row-left">
+                           
+                            <div class="presentil-hesapla--table--age presentil-hesapla--table--row__13">
+                                <div class="presentil-hesapla--table--title presentil-hesapla--table--title__big text-left ml-xs-10">Bebeğin Doğum Tarihi</div>
+                                <div class="datepicker input-group" id='datetimepicker1' >
+                                    <input size="16" type="text"   name="baby-birthday" id="baby-birthday" class="presentil-hesapla--table--birthday" required>
+                                    <img class="presentil-hesapla--img__picker presentil-hesapla--img__picker__desktop " src="assets/img/datetimepicker.png"> 
+                                    <img class="presentil-hesapla--img__picker presentil-hesapla--img__picker__mobile" src="assets/img/picker_mobile.png"> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row reset-row">
+                    
+                    
+
+
+
+                    <!-- <input type="text" id="slider" class="slider"> -->
+                    
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__17 ">
+                        <div class="row reset-row-left">
+                            <div class="presentil-hesapla--table--baby-weight ">
+                                <div class="presentil-hesapla--table--title presentil-hesapla--table--title__small  text-left ml-md-0 ml-xs-10">Bebeğin Kilosu?</div>
+                                <input type="text" id="slider-baby-weight" name="baby-weight" value="" required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__18 bg-grey-1">
+                        <div class="row reset-row-left">
+                            <div class="presentil-hesapla--table--baby-weight ">
+                                <div class="presentil-hesapla--table--title presentil-hesapla--table--title__small  text-left ml-md-0 ml-xs-10">Bebeğin Boyu?</div>
+                                <input type="text" id="slider-baby-height" name="baby-height" value="" required/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            
+
+            
+
+
+            <div class=" col-12 mb-md-50">
+                <div class="row reset-row">
+                    <div class="presentil-hesapla--table--row presentil-hesapla--table--row__19">
+                        <div class="presentil-hesapla--table--title presentil-hesapla--table--title__small text-left">
+                            Bebeğin Baş Çevresi?
+                        </div>
+                        <input type="text" id="slider-baby-head" name="baby-head" value="" required/>
+                    </div>
+
+                    <div class="row presentil-hesapla--table--row presentil-hesapla--table--row__20">
+                        <div class="mt-15">
+                            <input type="submit" class="presentil-hesapla--button" value="Presentil Hesapla" />
+
+                        </div>
+                        <div class="urun--icerik--product--detail--1__back"><img class="urun--icerik--vertical-line" src="assets/img/vertical_line.png"> </div>
+                        <!-- <img class="presentil-hesapla--img__refresh filter-light-grey" src="assets/img/refresh.svg"> 
+                        <span class="presentil-hesapla--table--title__refresh">Temizle</span> -->
+
+                        <a href="javascript:void(0);" class="ml-10 refresh__btn row" onclick="resetDozHesapla()">
+                            <img class="presentil-hesapla--img__refresh filter-light-grey" src="assets/img/refresh.svg"> 
+                            <span class="presentil-hesapla--table--title__refresh">Temizle</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+
+           
+          </form>  
+        </div>    
+    </div>
+</div>
+
+

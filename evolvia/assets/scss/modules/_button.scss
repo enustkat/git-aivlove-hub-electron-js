@@ -1,0 +1,41 @@
+.button {
+    transition: all .3s;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px !important;
+
+}
+
+// General Buttons
+@include buttonColorsBlank('white', #fff, #000, #fff, #fff);
+@include buttonColorsFill('white', #fff, #000, #fff);
+
+@include buttonColorsBlank('black', #000, #fff, #000, #000);
+@include buttonColorsFill('black', #000, #fff, #000);
+
+@include buttonColorsBlank('main', $darkBlueColor, #fff, $darkBlueColor, $darkBlueColor);
+@include buttonColorsFill('main', $lightBlueColor, #fff, false, $lightBlueColor);
+
+@include buttonColorsBlank('light', $lightBlueColor, #fff, $lightBlueColor, $lightBlueColor);
+@include buttonColorsFill('light', $lightBlueColor, #fff, false, $lightBlueColor);
+@include buttonColorsDisabled('light', $disabled, #fff, false, $disabled);
+
+
+@include buttonColorsBlank('pink', $pinkColor, #fff, $pinkColor, $pinkColor);
+@include buttonColorsFill('pink', $pinkColor, #fff, false, $pinkColor);
+
+
+@include buttonColorsBlank('blue-500', $colorBlue500, #fff, $colorBlue500, $colorBlue500);
+@include buttonColorsFill('blue-500', $colorBlue500, #fff, false, $colorBlue500);
+
+
+.button-opacity{
+    opacity: 0.6;
+    &:hover{
+        opacity: 1;
+      
+    }
+} 
+

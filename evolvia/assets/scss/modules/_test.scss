@@ -1,0 +1,10 @@
+#grid-test{
+    @include clearfix();
+    li{
+        @include grid(5, 2%);
+    }
+    img{
+        width: 100%;
+    }
+
+} 

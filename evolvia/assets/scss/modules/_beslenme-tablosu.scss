@@ -1,0 +1,155 @@
+.beslenme-tablosu{
+
+    &--table{
+        & table{
+            background-color: white;
+            float: left;
+            margin-left: 20px;
+            width: 80%;
+            @include mobile(){
+                width: 90%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &--container{
+        padding: 15px 10px;
+
+        @include mobile{
+            padding: 20px 10px;
+        } 
+        
+        &--inner{
+            background-color: $bgLightGray;
+            color: $darkBlue;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            justify-content: center;
+            
+
+            &--items{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                // @include mobile{
+                //     margin-left: -24px;
+                // } 
+               
+                
+            }
+        }
+    }
+    &--product{
+        &--img{
+            width: calc((8vh + 8vw) / 2);
+            margin-top: 10px;
+            @include mobile{
+                width: calc((11vh + 11vw)/ 2);
+            }
+           
+        }
+        &--text{
+            font-size: 40px;
+            text-align: left;
+            width: 70%;
+            margin-left: 30px;
+            margin-top: 5px;
+            @include desktop-1440{
+                width: 60%;
+            }
+            @include desktop-1366{
+                width: 55%;
+            }
+            @include tablet{
+                font-size: 30px;
+            }
+
+            &--title{
+                margin-left: -3px;
+                font-weight: 900;
+            }
+           
+
+            
+        }
+        &--desc{
+            font-size: calc((1.17vh + 1.17vw)/ 2);
+            margin-top: -1vh;
+            font-weight: 700;
+            @include mobile{
+                font-size: calc((2.17vh + 1.17vw)/ 2);
+                // margin-left: 13px;
+            }
+            
+
+        }
+        &--icerik{
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+            @include mobile(){
+                width: 90%;
+            }
+
+            & span{
+                font-size: 20px;
+                color: $darkBlue;
+                font-weight: 600;
+                @include mobile(){
+                    font-size: 15px;
+                }
+            }
+            & p{
+                color: $lightText;
+                @include mobile(){
+                    font-size: 13px;
+                }
+            }
+        }
+        &--bilesen{
+            & table {
+                border-collapse: collapse;
+                margin: 0 auto;
+                width: 50%;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                @include mobile(){
+                    width: 90%;
+                }
+                
+
+              }
+              & td {
+                padding: 7px;
+                border: 1px solid #d0d9e7;
+                text-align: left;
+                font-size: 15px;
+                color: $darkBlue;
+                text-align: center;
+                @include mobile(){
+                    font-size: 13px;
+                }
+              }
+              
+        }
+    }
+}
+
+#beslenme-tablosu{
+    @include mobile{
+        margin-top: -10px;
+    }
+}
+
+
+
+
+  
+  
+  
+  

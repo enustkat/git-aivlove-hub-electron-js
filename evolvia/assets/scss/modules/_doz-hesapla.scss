@@ -1,0 +1,451 @@
+.doz-hesapla{
+    &--table{
+        &--row{
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 3vw;
+            padding-left: 3vw;
+            border: solid .5px white;
+
+
+ 
+            & input{
+                text-align: center;
+                
+            }
+
+
+            @include tablet-x(){
+                // padding: 5vw;
+            }
+           
+
+
+            &__1{
+                text-align: left;
+                border-top-left-radius: 4px;
+                width: 34%;
+                @include tablet-x(){
+                    width: 55%;
+                    padding-top: 10%;
+                    padding-left: 8vw;
+                }
+            }
+            &__2{
+                text-align: left;
+                width: 28%;
+                @include tablet-x(){
+                    width: 45%;
+                    padding-top: 10%;
+                    padding-left: 8vw;
+                }
+            }
+            &__3{
+                text-align: left;
+                width: 38%;
+                @include tablet-x(){
+                    width: 100%;
+                }
+            }
+            &__4{
+                text-align: left;
+                width: 25%;
+                padding-right: 1.4vw;
+                @include tablet-x(){
+                    width: 50%;
+                    
+                }
+            }
+            &__5{
+                width: 25%;
+                padding-right: 1.4vw;
+                @include tablet-x(){
+                    width: 50%;
+                    padding-right:1.4vw;
+                }
+            }
+            &__6{
+                width: 25%;
+                padding-right: 1.4vw;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__7{
+                width: 25%;
+                padding-right: 1.4vw;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__8{
+
+            }
+            &__9{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__10{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__11{
+                padding-left: unset;
+                width: 22%;
+                @include tablet-x(){
+                    width: 100%;
+                }
+
+            }
+            &__12{
+                @include flex-v-center;
+                margin-top: -50px;
+                width: 34%;
+                text-align: left;
+                @include tablet-x(){
+                    width: 100%;
+                    margin-top: 0px;
+                    margin-left: -5vw;
+                    border: unset; 
+                }
+            }
+
+            &__13{
+                width: 40%;
+                @include tablet-x(){
+                    width: 50%;
+                }
+            }
+            &__14{
+                margin-left: 2.5vw;
+                width: 40%;
+                @include tablet-x(){
+                    margin-left: unset;
+                    width: 50%;
+                }
+            }
+
+            & input{
+               
+                padding: .5vw;
+                width: 80%;
+                border-radius: 60px;
+                border: solid 1px $darkWhiteBorder2;
+                color: $mainBlue;
+                font-size: 20px;
+                font-weight: 600;
+                padding-left: 1vw;
+
+                @include tablet-x(){
+                    width: 100%;
+                    padding: 2.2vw;
+                    font-size: 40px;
+                }
+                @include tablet(){
+                    width: 100%;
+                    padding: 2.7vw;
+                }
+                @include mobile(){
+                    padding: 2.5vw;
+                    font-size: 20px;
+                }
+
+            }
+            
+        }
+        &--title{
+            color: $lightText;
+            font-weight: 600;
+            
+            
+
+            &__bigger{
+                color: $darkBlue;
+                & span{
+                    font-size: 60px;
+                }
+            }
+            &__big{
+                font-size: 1.2vw;
+                @include tablet-x(){
+                    font-size: 3.9vw;
+                }
+            }
+            &__small{
+                &__product{
+                    font-weight: bold;
+                    color: $darkBlue;
+                }
+                @include tablet-x(){
+                    font-size: 3.3vw;
+                }
+                
+            }
+
+            &__smaller{
+                font-size: 1vw;
+                color: $darkBlue;
+                margin-top: -30px;
+                margin-bottom: 30px;
+                @include tablet-x(){
+                    font-size: 3.5vw;
+                    margin-top: -20px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            &__refresh{
+                font-size: 1.2vw;
+                color:$LightGrey;
+                font-weight: 600;
+                @include flex-v-h-center;
+                margin-left: -10px;
+                cursor: pointer;
+
+                
+                @include tablet-x(){
+                    font-size: 4.2vw;
+                }
+
+            }
+        }
+
+        &--age{
+            margin-right: 15px;
+            margin-left: -15px;
+            @include tablet-x(){
+                margin-right: -5px;
+                margin-left: 5px;
+            }
+           
+        }
+        &--weight{
+            width: 100% !important;
+            text-align: center;
+            padding-left: unset;
+            @include tablet-x(){
+                width: 90% !important;
+                margin-left: 7%;
+            }
+           
+        }
+        &--energy{
+            width: 100% !important;
+            text-align: center;
+            padding-left: unset;
+            @include tablet-x(){
+                width: 90% !important;
+                margin-left: 5%;
+            }
+           
+        }
+        
+
+        // text-align: center;
+        // padding-left: unset;
+
+
+        
+    }
+    &--img{
+        &__gender{
+            width: 50px;
+            @include tablet-x(){
+                width: 50px;
+            }
+            @include mobile(){
+                width: 30px;
+            }
+           
+            &__right{
+                margin-left: 3vw;
+                text-align: center;
+                @include tablet-x(){
+                    margin-left: 10vw;
+                }
+                @include tablet(){
+                    margin-left: 5vw;
+                }
+                
+            }
+            &__left{
+                margin-left: 0vw;
+                text-align: center;
+            }
+        }
+        &__sub_icons{
+            height: 50px;
+            &__product{
+                width: 90px;
+                height: unset;
+            }
+        }
+        &__refresh{
+            width: 20px;
+            margin-right: 20px;
+            cursor: pointer;
+            @include flex-v-h-center;
+
+        }
+
+        &__print{
+            width: 30px;
+            margin-right: 20px;
+
+
+            @include desktop-1366(){
+                margin-left: 20px;
+            }
+
+
+            @include mobile(){
+                width: 20px;
+            }
+        }
+    }
+
+    &--container--inner{
+        @include desktop-1366{
+            zoom: .9;
+        }
+    }
+
+
+   
+    
+}
+
+.model-tamamla-btn{
+
+    @include tablet-x(){
+        margin-left: auto !important;
+        margin-right: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        text-align: center !important;
+        padding: 5px !important;
+        
+    }   
+}
+
+.rapor-al--button{
+        @include ease(0.3s); 
+        @include center;
+        @include flex-v-h-center;
+        color: #ffff;
+        font-weight: 900;
+        background-clip: padding-box;
+        background-color: $darkYellow;
+        font-size: 33px;
+        text-align: center;
+        padding: 15px;
+        font-size: 1.3vw;
+        border-radius: 66px;
+        zoom: .7;
+        padding-right: 3vw;
+        padding-left: 3vw;
+        &:hover{
+            color: white;
+        }
+
+        @include tablet-x(){
+            font-size: 4vw;
+            zoom: 1;
+            width: 60vw;
+            margin-left: 7vw;
+            margin-top: -15px;
+            
+        }   
+        
+        &:hover{
+            background-color: $hoverYellow;
+        }
+}
+
+
+
+.presentil-degerleri-gor--button{
+    @include ease(0.3s); 
+        color: #ffff !important;
+        font-weight: 900 !important;
+        background-clip: padding-box !important;
+        background-color: $lightBlueButton !important;
+        text-align: center !important;
+        padding: 10px !important;
+        font-size: 1.3vw !important;
+        border-radius: 66px !important;
+        zoom: .8 !important;
+        padding-right: 5vw!important;
+        padding-left: 5vw!important;
+        width: 100% !important;
+        &:hover{
+            color: white !important;
+        }
+
+        @include tablet-x(){
+            @include ease(0.3s); 
+            @include center;
+            @include flex-v-h-center;
+            margin-left: 7vw;
+
+            zoom: 1 !important;
+            font-size: 4vw !important;
+            width: 160% !important;
+        }
+
+       
+        &:hover{
+            background-color: $hoverBlue !important;
+            
+        } 
+}
+
+
+.urun--icerik--vertical-line{
+    height: 8vh;
+    width: .2vh !important;
+    margin-left: 4vh !important;
+    margin-right: 4vh!important;
+
+    @include mobile(){
+        @include flex-v-h-center;
+        zoom: .9;
+        height: 100%;
+    }
+}
+
+#doz-hesapla{
+    @include mobile{
+        margin-top: -10px;
+    }
+}
+
+
+.doz-hesapla--container--inner{
+    zoom: .85;
+}
+
+
+
+.refresh__btn:hover{
+    @include ease(0.3s); 
+    & img {
+        @include ease(0.3s); 
+        filter: invert(22%) sepia(95%) saturate(944%) hue-rotate(190deg) brightness(104%) contrast(98%) !important;
+    }
+
+    & span{
+        @include ease(0.3s); 
+        color:$hoverBlue;
+    }
+}  
+  
+  
+  

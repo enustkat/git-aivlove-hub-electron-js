@@ -1,0 +1,19 @@
+.floatright{
+    float: right
+}
+.floatleft{
+    float: left
+}
+
+@media (max-width: 990px){
+    .floatright{
+        float: unset
+    }
+    .floatleft{
+        float: unset
+    }
+}
+
+.center-div{
+    margin: 0 auto;
+}

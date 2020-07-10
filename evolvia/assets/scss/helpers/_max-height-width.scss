@@ -1,0 +1,53 @@
+$max-height-widths: () !default;
+$max-height-widths: map-merge(
+    (
+        'auto': auto,
+        '134': 134px,
+        '160': 160px,
+        '190': 190px,
+        '215': 215px,
+        '235': 235px,
+        '260': 260px,
+        '280': 280px,
+        '290': 290px,
+        '300': 300px,
+        '320': 320px,
+        '340': 340px,
+        '400': 400px,
+        '430': 430px,
+        '450': 450px,
+        '470': 470px,
+        '500': 500px,
+        '540': 540px,
+        '580': 580px,
+        '610': 610px,
+        '670': 670px,
+        '700': 700px,
+        '750': 750px,
+        '770': 770px,
+        '780': 780px,
+        '800': 800px,
+        '970': 970px,
+        '1000': 1000px,
+        '1030': 1030px,
+        '1100': 1100px,
+        '1200': 1200px,
+    ),
+    $max-height-widths
+);
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+        @each $key, $value in $max-height-widths {
+            .max-width#{$infix}-#{$key} {
+                max-width: $value !important;
+            }
+
+            .max-height#{$infix}-#{$key} {
+                max-height: $value !important;
+            }
+        }
+    }
+}

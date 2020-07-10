@@ -1,0 +1,383 @@
+#presentil-degerler{
+    & .doz-hesapla--table--row{
+        padding-top: unset;
+        padding-left: unset;
+        border: unset;
+        @include flex-v-h-center;
+    }
+
+    & .edit_btn_img{
+        margin-left: -2.5vw;
+        width: 2.2vw;
+        height: 2.2vw;
+        // margin-top: 1.3vh;
+
+        @include tablet-x(){
+            margin-left: -8vw;
+            width: 4vh;
+            height: 4vh;
+        }
+        @include mobile-s(){
+            margin-left: -8.5vw;
+    width: 7.5vw;
+    height: 7.5vw;
+        }
+       
+    }
+
+    & .doz-hesapla--table--row input {
+        font-size: 1.1vw;
+    }
+
+    & .custom-select {
+        background: #fff url(../img/selectboxpicker.png) no-repeat right .3rem center/2.2vw;
+        @include tablet-x() {
+            width: 250px;
+            background:#fff url(../img/selectboxpicker.png) no-repeat right .1rem  center/7.5vw 7.5vw;
+            margin-left: -9vw;
+            margin-right: 3vw;
+        }
+        @include mobile() {
+            width: 90px;
+            background:#fff url(../img/selectboxpicker.png) no-repeat right .1rem  center/7.5vw 7.5vw;
+            margin-left: -9vw;
+            margin-right: 3vw;
+        }
+    }
+    & .select-selected {
+        padding: .7vw !important;
+        margin-right: -20px !important;
+        padding-right: 4vw !important;
+        text-align: left;
+        @include desktop-1440(){
+            padding: .4vw ;
+
+        }
+        @include tablet-x() {
+            font-size: 3vw!important;
+            padding-top: 2vw!important;
+            padding-bottom: 2vw!important;
+        }
+        @include mobile() {
+            text-align: left;
+            padding-left: 3vw;
+        }
+    }
+
+    & .rapor-al--button {
+        @include tablet-x(){
+            font-size: 4vw;
+            zoom: 1;
+            width: 28vw;
+            margin-left: -5vw;
+            margin-top: 18px;
+            zoom: .8;
+            margin-bottom: -30px;
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+        
+        }
+        
+    }
+}
+
+
+
+.presentil-degerler{
+
+
+
+    &--layout--row{
+        &__5{
+            height: 100%;
+            padding: 10px 5px;
+           
+           
+    
+        }
+    }
+
+    &--container{
+        @include tablet-x(){
+            background-color: #fafbfe;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            padding: 10px 0;
+            
+            top: -11px;
+            height: 240px;
+            flex: unset;
+        }
+        @include mobile(){
+            background-color: #fafbfe;
+            width: 94%;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            padding: 10px 0;
+            
+            top: -11px;
+            height: 140px;
+
+        }
+    }
+    &--input{
+        &__1{
+            float: right;
+            width: 90% !important;
+            padding: .8vw!important;
+            font-size: 1.1vw!important;
+            zoom: .8;
+            color: $darkBlue !important;
+            
+            @include tablet-x(){
+                display: block;
+                font-size: 1.9vw !important;
+                padding-top: 2vw !important;
+                padding-bottom: 2vw !important;
+                padding-left: 2vw;
+            }
+            @include mobile(){
+                display: block;
+                padding: 3vw !important;
+                font-size: 3.7vw!important;
+            }
+
+            &__container{
+                margin-bottom: -17px;
+                padding-right: 5vw;
+                
+                @include mobile-s(){
+                    padding-right: 4vw !important;
+                }
+                @include mobile-xs(){
+                    padding-right: 1vw !important;
+                }
+                
+               
+            }
+        }
+        &__2{
+            float: right;
+            width: 50% !important;
+            color: $darkBlue !important;
+            
+            @include tablet-x(){
+                width: 90%!important;
+                font-size: 1.9vw !important;
+                padding-top: 2vw !important;
+                padding-bottom: 2vw !important;
+                padding-left: 2vw;
+            }
+            @include mobile(){
+                width: 90%!important;
+                font-size: 3vw !important;
+                padding-top: 2vw !important;
+                padding-bottom: 2vw !important;
+                padding-left: 2vw;
+                font-size: 3.5vw !important;
+                
+            }
+
+        }
+        &__3{
+            float: right;
+            width: 60% !important;
+            padding: .8vw!important;
+            font-size: 1.1vw!important;
+            zoom: .8;
+            padding-right: 4vw !important;
+            color: $darkBlue !important;
+            @include tablet-x(){
+                width: 90%!important;
+                font-size: 1.9vw !important;
+                padding-top: 2vw !important;
+                padding-bottom: 2vw !important;
+            }
+            @include mobile(){
+                width: 90%!important;
+                padding: 3vw !important;
+                font-size: 3.7vw!important;
+            }
+        }
+        &__4{
+            float: right;
+            width: 70% !important;
+            color: $darkBlue !important;
+        }
+        &__5{
+            float: right;
+            width: 70% !important;
+            color: $darkBlue !important;
+            padding: .8vw!important;
+            font-size: 1.1vw!important;
+            zoom: .8;
+
+            @include mobile(){
+                width: 90%!important;
+                font-size: 3.5vw !important;                
+                padding: 2.75vw !important;               
+            }
+        }
+        &__4{
+            float: right;
+            width: 60% !important;
+        }
+        
+    }
+    &--row{
+        &__1{
+            margin-right: -2vw;
+        }
+        &__2{
+            margin-right: -5vw;
+
+            margin-right: 0vw;
+            margin-left: 4vw;
+
+            @include tablet-x(){
+                margin-right: unset;
+                padding: unset;
+                margin-left: 17vw;
+            }
+        }
+        &__3{
+            margin-right: -1.5vw;
+            @include tablet-x(){
+                margin-right: unset;
+                padding: unset;
+                margin-left: 3vw;
+                margin-left: 1vw;
+                margin-right: 4vw;
+            }
+            
+        }
+        &__4{
+            margin-left: 1vw;
+            margin-right: 2vw;
+        }
+        &__5{
+            margin-right: -8vw;
+            zoom: .9;
+            margin-left: 0vw !important;
+
+            @include tablet-x(){
+                margin-right: unset;
+                padding: unset;
+                margin-left: 3vw;
+             
+                margin-left: -8vw !important;
+                margin-right: -8vw !important;
+            }
+        }
+        &__6{
+            zoom: .9;
+            @include tablet-x(){
+                margin-right: unset;
+                padding: unset;
+                margin-left: 3vw;
+                margin-left: -21vw !important;
+                margin-right: -8vw !important;
+            }
+        }
+        &__7{
+            margin-top: 1.1vw;
+            margin-left: -2vw !important;
+            zoom: .9;
+        }
+        &__8{
+            zoom: .8;
+            margin-left: 2vw!important;
+            font-size: 1.2vw;
+            font-weight: bold;
+            margin-top: 20px;
+        
+        }
+
+    }
+
+    &--title{
+        color: $darkBlue;
+        text-align: left;
+        font-size: 1.2vw;
+                @include tablet-x(){
+                    font-size: 3.9vw;
+                }
+    }
+
+    &__display--desktop{
+        @include tablet-x(){
+            display: none;
+        }
+        
+    }
+    &__display--mobile{
+        display: none;
+
+        @include tablet-x(){
+            display: flex;
+        }
+    }
+}
+
+.hesapla-btn{
+    background-color: $darkBlue;
+    &:hover{
+        background-color: $hoverBlue !important;
+
+    }
+}
+
+.print-container {
+    font-size: 1.2vw;
+    color: #154387;
+    font-weight: 600;
+    width: 45%;
+    float: right;
+    margin-top: 30px;
+    zoom: .9;
+    cursor: pointer;
+   
+    @include tablet-x(){
+        font-size: 3.2vw;
+        width: unset;
+        margin-right: 6vw;
+    }
+
+    & img{
+        @include tablet-x(){
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+
+
+    & span {
+        border-bottom: solid 2px $darkBlue;
+        padding-bottom: 2px;
+    }
+}
+
+
+.print-button-container{
+    font-size: 1.2vw;
+    color: #154387;
+    font-weight: 600;
+    @include mobile(){
+        font-size: 3.2vw;
+    }
+}
+.print-button{
+    float: right;
+    margin-right: 20px;
+}

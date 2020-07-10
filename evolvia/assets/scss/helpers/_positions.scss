@@ -1,0 +1,180 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        $i: -50;
+        
+        @while $i <= 100 {
+            // Margins
+            .mt#{$infix}-#{$i} {
+                margin-top: #{$i}px !important;
+            }
+
+            .mb#{$infix}-#{$i} {
+                margin-bottom: #{$i}px !important;
+            }
+
+            .ml#{$infix}-#{$i} {
+                margin-left: #{$i}px !important;
+            }
+
+            .mr#{$infix}-#{$i} {
+                margin-right: #{$i}px !important;
+            }
+
+            .m#{$infix}-#{$i} {
+                margin: #{$i}px !important;
+            }
+
+            @if ($i >= 0) {
+                // Paddings
+                .pt#{$infix}-#{$i} {
+                    padding-top: #{$i}px !important;
+                }
+
+                .pb#{$infix}-#{$i} {
+                    padding-bottom: #{$i}px !important;
+                }
+
+                .pl#{$infix}-#{$i} {
+                    padding-left: #{$i}px !important;
+                }
+
+                .pr#{$infix}-#{$i} {
+                    padding-right: #{$i}px !important;
+                }
+
+                .p#{$infix}-#{$i} {
+                    padding: #{$i}px !important;
+                }
+
+                // Width & Height
+                .w#{$infix}-#{$i} {
+                    width: #{$i}#{'%'} !important;
+                }
+
+                .h#{$infix}-#{$i} {
+                    height: #{$i}#{'%'} !important;
+                }
+
+                .w-px#{$infix}-#{$i} {
+                    width: #{$i}px !important;
+                }
+
+                .h-px#{$infix}-#{$i} {
+                    height: #{$i}px !important;
+                }
+            }
+
+            @if ($i < 10) {
+                $i: $i + 1;
+            } @else {
+                @if($i > 80 ) {
+                    $i: $i + 1;
+                } @else {
+                    $i: $i + 5;
+                }
+                
+            }    
+        }
+
+        // Width & Height
+        .w#{$infix}-auto {
+            width: auto !important;
+        }
+    }
+}
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        $i: 1;
+
+        @while $i <= 100 {
+            // Margins
+            .mt-p#{$infix}-#{$i} {
+                margin-top: #{$i}#{'%'} !important;
+            }
+
+            .mb-p#{$infix}-#{$i} {
+                margin-bottom: #{$i}#{'%'} !important;
+            }
+
+            .ml-p#{$infix}-#{$i} {
+                margin-left: #{$i}#{'%'} !important;
+            }
+
+            .mr-p#{$infix}-#{$i} {
+                margin-right: #{$i}#{'%'} !important;
+            }
+
+            .m-p#{$infix}-#{$i} {
+                margin: #{$i}#{'%'} !important;
+            }
+
+            @if ($i >= 0) {
+                // Paddings
+                .pt-p#{$infix}-#{$i} {
+                    padding-top: #{$i}#{'%'} !important;
+                }
+
+                .pb-p#{$infix}-#{$i} {
+                    padding-bottom: #{$i}#{'%'} !important;
+                }
+
+                .pl-p#{$infix}-#{$i} {
+                    padding-left: #{$i}#{'%'} !important;
+                }
+
+                .pr-p#{$infix}-#{$i} {
+                    padding-right: #{$i}#{'%'} !important;
+                }
+
+                .p-p#{$infix}-#{$i} {
+                    padding: #{$i}#{'%'} !important;
+                }
+
+                
+            }
+
+            @if ($i < 10) {
+                $i: $i + 1;
+            } @else {
+                $i: $i + 5;
+            }
+        }
+
+        // Width & Height
+        .w#{$infix}-auto {
+            width: auto !important;
+        }
+    }
+}
+
+
+
+
+
+.valign {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.banner-top{
+    top:100px;
+    @include media-breakpoint-down(md) {
+       top:4px;
+}
+}
+
+.v-h-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

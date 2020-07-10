@@ -1,0 +1,420 @@
+// Variables
+
+
+
+@import url(//fonts.googleapis.com/css?family=Baloo+Chettan+2);
+
+
+  $fontFamilyMain: 'Baloo Chettan 2', Helvetica, sans-serif;
+  $fontFamilySpecial: 'Montserrat', cursive;
+
+// Colors
+
+$mainBlue:#2275b8;
+$darkBlue:#154387;
+$bgBlue:#207cbf;
+$lightBlueButton:#5b7bab;
+$mainYellow:#f0cf61;
+$darkYellow:#f5c906;
+$underline:#4992c9;
+$bgLightGray:#f9f9f9;
+$bgDarkBlue:#144386;
+$LightGrey:#8aa1c3;
+$darkWhite:#f7f7fa;
+$darkWhiteBorder:#e5e6f0;
+$darkWhiteBorder2:#d0d9e7;
+$lightText:#60779a;
+
+$greyBg1:#f6f6f6;
+$greyBg2:#f9f9f9;
+
+$hoverYellow:#ffd82a;
+$hoverBlue:#1b52a2;
+
+
+.text-color-main {
+    color: $mainBlue;
+} 
+.text-color-dark-blue {
+    color: $mainBlue;
+} 
+
+.bg-grey-1{
+    background-color: $greyBg1;
+}
+.bg-grey-2{
+    background-color: $greyBg2;
+}
+
+.border-yellow{
+    border: solid 1px $darkYellow !important;
+}
+
+
+
+// Resources
+// RGB to Filter codes
+// https://codepen.io/sosuke/pen/Pjoqqp
+
+
+.filter-main-color {
+    filter: invert(40%) sepia(56%) saturate(822%) hue-rotate(166deg) brightness(90%) contrast(90%);
+}
+
+.filter-dark-blue {
+    filter: invert(19%) sepia(83%) saturate(1243%) hue-rotate(193deg) brightness(97%) contrast(93%);
+}
+
+.filter-light-grey {
+    filter: invert(90%) sepia(77%) saturate(6327%) hue-rotate(169deg) brightness(81%) contrast(85%);
+}
+.filter-white {
+    filter: invert(100%) sepia(5%) saturate(7476%) hue-rotate(30deg) brightness(121%) contrast(104%);
+}
+
+
+// Breakpoints
+
+$breakpoint-min-1921: 1921px;
+$breakpoint-1440: 1440px;
+$breakpoint-1366: 1366px;
+$breakpoint-min-tablet-x: 1025px;
+$breakpoint-tablet-x: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile-l: 750px;
+$breakpoint-mobile: 414px;
+$breakpoint-mobile-s: 375px;
+$breakpoint-mobile-xs: 320px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+$mainColor: #1d96b0;
+$lightBlueColor: #22b8c6;
+$moreLightBlueColor: #1ad4e5;
+$darkBlueColor: #003a65;
+$whiteColor: #fff;
+$shadowGray:#e2e4ec;
+$grayColor: #9699b3;
+$pinkColor:#eb5a59;
+$bgColor1:#708198;
+$bgColor2:#0fc9af;
+$bgColor3:#00365d;
+$bgColor4:#fafbfe;
+$bgColor5:#ffffff;
+$bgColor6:#13141f;
+$bgColor7:#21afbc;
+$bgColor8:#eeeef2;
+$bgColor9:#f3f3f4;
+$bgColor10:#f4f6ff;
+$bgColor11:#1b818b;
+$disabled:#a1bdbf;
+
+
+
+.bg-color-1{
+    background-color:$bgColor1;
+}
+.bg-color-2{
+    background-color:$bgColor2;
+}
+.bg-color-3{
+    background-color:$bgColor3;
+}
+.bg-color-4{
+    background-color:$bgColor4;
+}
+.bg-color-5{
+    background-color:$bgColor5;
+}
+.bg-color-7{
+    background-color: $bgColor7;
+}
+.bg-color-8{
+    background-color: $bgColor8;
+}
+.bg-color-9{
+    background-color: $bgColor9;
+}
+.bg-color-10{
+    background-color: $bgColor10;
+}
+
+
+
+
+
+.text-color-light-blue {
+    color: $lightBlueColor;
+}
+
+.text-color-more-light-blue {
+    color: $moreLightBlueColor;
+}
+
+.text-color-dark-blue {
+    color: $darkBlueColor;
+}
+
+.text-color-white {
+    color: $whiteColor;
+}
+
+.text-color-gray {
+    color: $grayColor;
+}
+.text-color-black {
+    color: $bgColor6;
+}
+.text-color-bold {
+    color: $bgColor3;
+}
+
+
+
+
+
+
+
+//
+$colorMain: #1d96b0;
+$colorDarkBlue: #0a183a;
+$colorTextDark: #0d0f1a;
+$colorBlue300: #4e5f83;
+$colorBlue400: #00b3ee;
+$colorBlue500: #0080ba;
+$colorBlue600: #01427d;
+$colorBlue700: #0255c5;
+$colorBlue800: #01205a;
+$colorBlue900: #031b4e;
+$colorBlue1000: #1d97b1;
+$pinkColor:#eb5a59;
+$contactAddress1: #1359c1;
+$contactAddress2: #f59d1e;
+$contactAddress3: #1699c5;
+$contactAddress4: #f5771d;
+$colorDividerGray: #e5e7ed;
+$gray800: #dadaea;
+$gray700: #b7bec6;
+$gray600: #9fa6bd;
+$gray500: #f4f7f9;
+$gray400: #f3f3f4;
+$gray300: #e0e0ec;
+$gray200: #f9f9f9;
+$gray100: #f9fbfc;
+
+
+
+
+
+// Bootstrap
+$body-color: $colorMain;
+
+$headings-font-weight: 'inherit';
+
+$input-btn-padding-y: .9rem;
+
+$theme-colors: (
+    'main': $colorMain,
+    'dark-blue': $colorDarkBlue,
+    'blue-300': $colorBlue300,
+    'blue-400': $colorBlue400,
+    'blue-500': $colorBlue500,
+    'blue-600': $colorBlue600,
+    'blue-700': $colorBlue700,
+    'blue-800': $colorBlue800,
+    'blue-900': $colorBlue900,
+    'contact-address1': $contactAddress1,
+    'contact-address2': $contactAddress2,
+    'contact-address3': $contactAddress3,
+    'contact-address4': $contactAddress4,
+    'gray-800': $gray800,
+    'gray-700': $gray700,
+    'gray-600': $gray600,
+    'gray-500': $gray500,
+    'gray-400': $gray400,
+    'gray-300': $gray300,
+    'gray-200': $gray200,
+    'gray-100': $gray100,
+    'dark': $colorTextDark,
+    'divider-gray': $colorDividerGray,
+    'black': #000,
+    'white': #fff,
+);
+
+$spacer: 1rem;
+$spacers: (
+    // n12: -($spacer * 3),
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.5),
+    // 2\.5: ($spacer * 0.625),
+    3: ($spacer * 0.75),
+    4: ($spacer * 1),
+    5: ($spacer * 1.25),
+    6: ($spacer * 1.5),
+    7: ($spacer * 1.75),
+    8: ($spacer * 2),
+    9: ($spacer * 2.25),
+    10: ($spacer * 2.5),
+    11: ($spacer * 2.75),
+    12: ($spacer * 3),
+    13: ($spacer * 3.25),
+    14: ($spacer * 3.5),
+    15: ($spacer * 3.75),
+    16: ($spacer * 4),
+    18: ($spacer * 4.5),
+    20: ($spacer * 5),
+    22: ($spacer * 5.5),
+    24: ($spacer * 6),
+    28: ($spacer * 7),
+    30: ($spacer * 7.5),
+    32: ($spacer * 8),
+    34: ($spacer * 8.5),
+    35: ($spacer * 8.75),
+    36: ($spacer * 9),
+    40: ($spacer * 10),
+    50: ($spacer * 12.5),
+);
+
+$sizes: (
+    150: 150%,
+);
+
+$grid-columns: 48;
+$grid-gutter-width: 20px;
+
+$input-bg: #e5e7ed;
+$input-border-radius: 0;
+$input-border-color: #efeef6;
+$input-btn-focus-width: .05rem;
+$input-btn-focus-color: $colorMain;
+$component-active-bg: $colorMain;
+$form-feedback-font-size: 90%;
+$caret-width: .38em;
+
+// 1900px instead of 1920px and 1350px instead of 1366px
+// because some browsers report width as 1905px
+// if scrollbar is visible (I'm looking at you Safari)
+$grid-breakpoints: (
+    xxxs: 0,    
+    xxs: 375,
+    xs: 400px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1100px,
+    xxl: 1350px,
+    xxxl: 1600px,
+    xxxxl: 1700px
+);
+
+
+// 1024 mobil 
+
+// $grid-breakpoints: (
+//     xxxs: 0,    
+//     xxs: 375,
+//     xs: 400px,
+//     sm: 576px, // 576 - 767
+//     md: 768px, // 768 - 991px
+//     lg: 992px, // 992 - 1099px
+//     xl: 1100px, // 1100 - 1365px
+//     xxl: 1366px, // 1366 - 1439px
+//     xxlg: 1440px, // 1440 - 1559px
+//     xxxl: 1600px, // 1600 - 1699px
+//     xxxxl: 1700px
+// );
+
+$container-max-widths: (
+    xs: 375px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1340px,
+    xxxl: 1450px,
+    xxxxl: 1500px + $grid-gutter-width
+);
+
+// Header Top Height
+$header-top-height: (
+    sm: 30px,
+    lg: 40px,
+    xl: 60px,
+);
+
+$header-top-shrink-height: (
+    sm: 15px,
+    lg: 20px,
+    xl: 28px,
+);
+
+// Header Bottom Height
+$header-bottom-height: (
+    sm: 60px,
+    lg: 80px,
+    xl: 90px,
+);
+
+$header-bottom-shrink-height: (
+    sm: 60px,
+    lg: 80px,
+    xl: 98px,
+);
+
+// Wrapper
+$wrapper-offset: (
+    xs: 20px,
+    sm: 30px,
+    md: 35px,
+    lg: 40px,
+    xl: 45px,
+    xxl: 50px,
+    xxxl: 55px,
+    xxxxl: 50px,
+);
+
+$progressbar-height: 4px;
+
+$input-font-size: .85rem;
+$label-margin-bottom: 0;
+
+$custom-control-indicator-box-shadow: none;
+$custom-control-indicator-focus-box-shadow: none;
+
+// jonsuh/hamburgers
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 25px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $colorMain;
+$hamburger-types: (
+        spin
+);
+
+// Lightgallery
+$lg-path-fonts: '../../../node_modules/lightgallery/src/fonts';
+$lg-path-images: '../../../node_modules/lightgallery/src/img';
+
+$card-border-width: 0;
+$card-bg: transparent;
+$card-spacer-x: 0;
+
+$nav-pills-border-radius: 0;
+
+$dropdown-item-padding-x: 0;
+
+
+
+

@@ -1,0 +1,155 @@
+.kimler-rapor-yazabilir{
+
+    &--table{
+        & table{
+            background-color: white;
+            float: left;
+            margin-left: 20px;
+            width: 80%;
+            @include mobile(){
+                width: 90%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &--container{
+        padding: 15px 10px;
+        zoom: .8;
+
+        @include mobile{
+            padding: 20px 10px;
+        } 
+        
+        &--inner{
+            color: $darkBlue;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            text-align: left;
+            padding: 4vh 6vh;
+            @include mobile(){
+                padding-left: 1vh;
+            }
+           
+
+            &--items{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                // @include mobile{
+                //     margin-left: -24px;
+                // } 
+               
+                
+            }
+        }
+    }
+    &--product{
+        &--img{
+            width: calc((8vh + 8vw) / 2);
+            margin-top: 10px;
+            @include mobile{
+                width: calc((11vh + 11vw)/ 2);
+            }
+
+            &--thick{
+                width: calc((1.8vh + 1.8vw) / 2);
+                margin-right: 1vh;
+            }
+           
+        }
+        &--text{
+            font-size: 40px;
+            text-align: left;
+            width: 70%;
+            margin-top: 35px;
+            font-weight: 600;
+            @include mobile{
+                font-size: 25px;
+            }
+           
+
+            
+        }
+        &--desc{
+            font-size: calc((1.5vh + 1.5vw)/ 2);
+            margin-top: 1vh;
+            color: $lightText;
+            @include mobile{
+                font-size: calc((2.17vh + 1.17vw)/ 2);
+            }
+            @include mobile{
+                font-size: 15px;
+            }
+            
+
+        }
+        &--icerik{
+            width: 80%;
+            text-align: justify;
+            margin: 0 auto;
+            @include mobile(){
+                width: 90%;
+            }
+
+            & span{
+                font-size: 20px;
+                color: $darkBlue;
+                font-weight: 600;
+                @include mobile(){
+                    font-size: 15px;
+                }
+            }
+            & p{
+                color: $lightText;
+                @include mobile(){
+                    font-size: 13px;
+                }
+            }
+        }
+        &--bilesen{
+            & table {
+                border-collapse: collapse;
+                margin: 0 auto;
+                width: 50%;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                @include mobile(){
+                    width: 90%;
+                }
+                
+
+              }
+              & td {
+                padding: 7px;
+                border: 1px solid #d0d9e7;
+                text-align: left;
+                font-size: 15px;
+                color: $darkBlue;
+                text-align: center;
+                @include mobile(){
+                    font-size: 13px;
+                }
+              }
+              
+        }
+    }
+}
+
+#kimler-rapor-yazabilir{
+    @include mobile{
+        margin-top: -10px;
+    }
+}
+
+
+
+
+  
+  
+  
+  
